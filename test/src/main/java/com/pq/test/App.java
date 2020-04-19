@@ -1,4 +1,4 @@
-package com.pq;
+package com.pq.test;
 
 /**
  * Hello world!
