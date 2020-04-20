@@ -46,7 +46,7 @@
       // 在连接阶段会给a复制默认值0
       // 在初始化过程，会将1赋值给a
       // 也就是说a = 1是两个过程
-      public staitc fianl a = 1;
+      public static final int a = 1;
    }
    ```
    - 类的使用
