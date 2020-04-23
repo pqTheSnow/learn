@@ -17,6 +17,8 @@
    - 程序计数器
 
 ## 类加载器
+- 问题
+   - 
 - java自带的类加载器
    - 根类加载器(Bootstrap)  --- 加载rt.jar
    - 扩展类加载器(Extension)   --- 加载jre/lib/*.jar
@@ -27,6 +29,11 @@
    - 能成功加载类的加载器
 - 初始类加载器
    - 能成功返回class的加载器
+- 获得类加载器的方法
+   - 获得当前类的ClassLoader
+   - 获得当前线程上下文的ClassLoader
+   - 获得系统的ClassLoader
+   - 获得调用者的ClassLoader
 
 ### 双亲委托机制
 - 自底向上检查类是否已经完成加载
