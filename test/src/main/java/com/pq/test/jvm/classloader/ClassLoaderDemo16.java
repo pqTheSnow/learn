@@ -31,6 +31,9 @@ public class ClassLoaderDemo16 extends ClassLoader {
 
     @Override
     protected Class<?> findClass(String className) {
+        System.out.println("findClass invoked = " + className);
+        System.out.println("class loader name = " + this.classLoaderName);
+
         byte[] data = this.loadClassData(className);
 
         return this.defineClass(className, data, 0, data.length);
@@ -41,7 +44,6 @@ public class ClassLoaderDemo16 extends ClassLoader {
         byte[] data = null;
         ByteArrayOutputStream baos = null;
         try {
-            System.out.println("classLoader = " + this.classLoaderName);
 
             name = name.replace(".", "\\");
 
