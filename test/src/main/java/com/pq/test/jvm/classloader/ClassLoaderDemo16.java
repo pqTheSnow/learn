@@ -14,6 +14,10 @@ public class ClassLoaderDemo16 extends ClassLoader {
         this.path = path;
     }
 
+    public ClassLoaderDemo16(ClassLoader classLoader) {
+        super(classLoader);
+    }
+
     public ClassLoaderDemo16(String classLoaderName) {
         super();// 将系统类加载器当作该类加载器的父加载器
         this.classLoaderName = classLoaderName;
@@ -24,10 +28,10 @@ public class ClassLoaderDemo16 extends ClassLoader {
         this.classLoaderName = classLoaderName;
     }
 
-    @Override
-    public String toString() {
-        return "[" + this.classLoaderName + "]";
-    }
+//    @Override
+//    public String toString() {
+//        return "[" + this.classLoaderName + "]";
+//    }
 
     @Override
     protected Class<?> findClass(String className) {
@@ -117,7 +121,5 @@ public class ClassLoaderDemo16 extends ClassLoader {
         obj = clazz.newInstance();
         System.out.println(obj);
         System.out.println();
-
-
     }
 }
