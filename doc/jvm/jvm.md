@@ -1,4 +1,9 @@
 # JVM
+
+## JVM类加载器
+## JVM字节码
+## JVM垃圾回收机制
+
 - JVM监控工具
    - jconsule
       - 监控内存变化
@@ -27,7 +32,7 @@
 - 问题
    - 添加问题
 - java自带的类加载器
-   - 根类加载器(Bootstrap)  --- 加载rt.jar
+   - 根类加载器(Bootstrap)  --- 加载rt.jarJd
    - 扩展类加载器(Extension)   --- 加载jre/lib/*.jar
    - 系统(应用)类加载器(System)   --- 加载ClassPath下指定的jar包及目录中的class文件
    - 加载流程如下<img src='./img/load.PNG' />
