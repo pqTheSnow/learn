@@ -12,6 +12,8 @@
         <module>util</module>
         <module>test</module>
         <module>redis</module>
+        <module>es_hbase</module>
+        <module>spark</module>
     </modules>
 
     <name>learn</name>
@@ -46,12 +48,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
